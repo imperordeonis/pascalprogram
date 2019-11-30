@@ -1,16 +1,17 @@
-program Calculator;
-var a,b:integer ; 
-begin
-write('Введи число a: ');
-read(a);
-write('Введи число b: ');
-read(b);
+var
+  a, b, c: integer;
 
-case b of
-    1: writeln('Результат: ', a*24*3600);
-    2: writeln('Результат: ', a*24*7*3600);
-    3: writeln('Результат: ', a*24*365*3600);
-    else 
-    writeln('Шо ти вводиш?');
-end;
+begin
+  read(a);
+  b := 10;
+  c := -10;
+  while a > 0 do
+  begin
+    if (a mod 10 > c) then
+      c := a mod 10;
+    if (a mod 10 < b) then 
+      b := a mod 10;
+    a := a div 10;
+  end;
+  writeln(b, ' ', c);
 end.
