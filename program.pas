@@ -1,5 +1,5 @@
-var
-  a, b, c: integer;
+﻿var
+  a, b, c: longint;
 
 begin
   read(a);
