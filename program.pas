@@ -16,4 +16,4 @@ case с of
     else 
     writeln('Шо ти вводиш?');
 end;
-end;
+end.
